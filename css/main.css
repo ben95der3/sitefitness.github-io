@@ -17,15 +17,11 @@ header {
 	height: 900px;
 	background: url(../img/gym_slider_home2.jpg) no-repeat center top / cover;
 }
-.container-6 {
-	width: 1830px;
-	margin: 0 auto;
-}
+
 
 .logo {
 	width: 160px;
 	margin: 20px;
-	float: left;
 }
 
 nav {
@@ -49,10 +45,19 @@ nav {
 }
 
 .menu a {
-	color: #f48460;
+	color: #f48460; 
 	text-decoration: none;
 	text-transform: uppercase;
 }
+
+header ul li a.active {
+
+}
+
+header ul li a:hover {
+	color: #fff;
+}
+
 
 .titles__firsr {
 	font-family: Montserrat;
@@ -63,7 +68,6 @@ nav {
 	transform: translate(-50%,-50%);
 	width: 100%;	
 }
-
 
 
 .titles__firsr span {
@@ -82,22 +86,105 @@ nav {
 }
 	
 
-
 @keyframes text {
 	0% {
 		color: white;
-		margin-bottom: -40px;
+		margin-bottom: 200px;
+		opacity: 0;
 	}
-	30%{
-		letter-spacing: 25px;
-		margin-bottom: -10px;
+	30% {
+		letter-spacing: 16px;
+		margin-bottom: 50px;
 	}
+}
+
+.about_the_technique {
+	font-family: Montserrat,sans-serif;
+	font-size: 22px;
+	color: #f48460;
+	text-transform: uppercase;
+	position: absolute;
+	bottom: 140px;
+	left: 44.5%;
+	animation: text 1s 1;	
+}
+
+@keyframes text {
+	0% {
+		margin-bottom: 200px;
+		opacity: 0;
+		
+	}
+	30% {
+		margin-bottom: 50px;
+	}
+}
+
+.arrow1-1 {
+	width: 40px;
+	position: absolute;
+	bottom: 80px;
+	left: 900px;
+	animation: arrow 1.8s infinite;
+}
+
+@keyframes arrow {
+	0% {
+		bottom: 80px;
+	}
+	50% {
+		bottom: 95px;
+	}
+	100% {
+		bottom: 80px;
+	}
+}
+
+.top_button1-1 {
+	position: fixed;
+	right: 10px;
+	bottom: 100px;
+	width: 50px;
+	height: 50px;
+	border-color: transparent;
+	border-radius: 50px;
+	background-color: #f48460;
+}
+
+.top_button1-1:hover{
+	background-color: #232a35;
+} 
+
+.top_button1-1::before,
+.top_button1-1::after {
+	content: '';
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 50%);
+} 
+
+.top_button1-1::before {
+	width: 5px;
+	height: 25px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	background-color: #fff;
+}
+
+.top_button1-1::after {
+	width: 15px;
+	height: 15px;
+	top: 25px;
+	transform: translate(-50%, -50%) rotate(45deg);
+	border-top: 5px solid #fff;
+	border-left: 5px solid #fff;
 }
 
 .container-6 {
 	width: 1330px;
 	height: 447px;
-	margin-top: 60px;
+	margin-top: 80px;
+	margin-left: 300px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -107,15 +194,16 @@ nav {
 	height: 447px;
 }
 
-
 .title_Methodology h2 {
-	font-size: 35px;
+	font-family: Open Sans,sans-serif;
+	font-size: 30px;
 	padding-left: 40px;
 	padding-top: 70px;
 	padding-bottom: 10px;
 }
 
 .Methodology-1-2 p {
+	font-family: Open Sans,sans-serif;
 	padding-left: 40px;
 	line-height: 1.45em;
 	padding-bottom: 10px;
@@ -123,8 +211,9 @@ nav {
 	color: #9c9c9c;
 }
 
-
 .btn-2 {
+	font-family: Open Sans,sans-serif;
+	font-size: 13px;
 	background: #f34e3a;
 	color: #fff;
 	display: block;
@@ -136,30 +225,44 @@ nav {
 	margin-top: 20px;
 }
 
-.directions_1 {
-	margin-top: 60px;
+.title_directions-1 {
+	font-family: Open Sans,sans-serif;
+	font-size: 18px;
 }
 
+.directions_1 {
+	margin-top: 100px;
+}
 
-.directions-1 {
+.title_directions-1 {
+	font-size: 19px;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 .directions-1-1 {
-	width: 2500px;
-	height: 466px;
 	display: flex;
 }
 
+.directions_1 p {
+	font-family: Open Sans,sans-serif;
+}
+
+.directions_1 a {
+	font-family: Open Sans,sans-serif;
+	text-decoration: none;
+}
+
 .container-1 {
-	width: 950px;
-	height: 600px;
+	display: flex;
 }
 
 .container-1-1 {
 	width: 475px;
 	height: 466px;
 	background: #252429;
-	float: left;
+	
 }
 
 .container-1-1 h3 {
@@ -186,23 +289,14 @@ nav {
 	padding-left: 90px;
 }
 
-
 .img-ironman1 {
 	width: 475px;
 	height: 466px;
 }
 
-pink
-
-
-.directions {
-
-}
-
-
 .container-2 {
-	width: 950px;
 	height: 466px;
+	display: flex;
 }
 
 .container-2-1 {
@@ -210,7 +304,6 @@ pink
 	height: 466px;
 	background: #f34d38;
 	float: left;
-
 }
 
 .container-2-1 h3 {
@@ -243,31 +336,26 @@ pink
 	height: 466px;
 }
 
-
-pink
-
-
 .directions-2 {
+	margin-top: -3.6px; 		
 }
 
 .directions-2-1 {
-	width: 2500px;
-	height: 466px;
 	display: flex;
-
 }
 
+.directions-2-2 {
+	display: flex;
+}
 
 .img-Marathon {
 	width: 475px;
 	height: 466px;
 }
 
-
 .container-3 {
 	width: 475px;
 	height: 466px;
-
 }
 
 .container-3-1 {
@@ -301,23 +389,23 @@ pink
 	padding-left: 90px;
 }
 
-
 .img-kettlebells2 {
 	width: 475px;
 	height: 466px;
 }
 
+.directions-2-3 {
+	display: flex;
+}
 
 .container-4 {
-	width: 950px;
-	height: 600px;
+	height: 466px;
 }
 
 .container-4-1 {
 	width: 475px;
 	height: 466px;
 	background: #252429;
-	float: left;
 }
 
 .container-4-1 h3 {
@@ -345,33 +433,42 @@ pink
 }
 
 .Courses-1 {
-	width: 1330px;
 	height: 620px;
-	background: #efecf4;
 	margin-left: 300px;
-	margin-top: 60px;
+	margin-top: 80px;
 }
 
 .title_courses-1  {
-	width: 1330px;
+	width: 1310px;
 	height: 121px;
 	text-align: center;
 	padding-bottom: 92px;
 }
 
 .title_courses-1 h2 {
-	font-size: 25px;
+	font-size: 30px;
 }
 
-
 .title_courses-1 p {
-	font-size: 19px;
+	font-family: Open Sans,sans-serif;
+	font-size: 18px;
 	margin: 19px 0px 0px;
 }
 
+.container_courses-1 h3 {
+	font-family: Open Sans,sans-serif;
+	font-size: 20px;
+}
+
+.container_courses-1 p {
+	font-family: Open Sans,sans-serif;
+}
+
+.container_courses-1 a {
+	font-family: Open Sans,sans-serif;
+}
 
 .container_courses-2 {
-	width: 1313px;
 	height: 570px;
 	display: flex;
 }
@@ -383,10 +480,10 @@ pink
 
 
 .Bench-1 h3 {
-	font-size: 25px;
 	padding-top: 40px;
 	padding-left: 30px;
 }
+
 
 .Bench-1 p {
 	font-size: 16px;
@@ -398,7 +495,6 @@ pink
 	text-decoration: none;
 	color: red;
 	padding-left: 30px;
-
 }
 
 .Bench-1-1 {
@@ -406,6 +502,9 @@ pink
 	height: 261px;
 }
 
+.Bench-1:hover {
+	margin-top: -30px;
+}
 
 .container_courses-2-2 {
 	width: 420px;
@@ -414,12 +513,13 @@ pink
 	margin-right: 30px;
 }
 
+.run:hover {
+	margin-top: -30px;
+}
 
 .run h3 {
-	font-size: 25px;
 	padding-top: 40px;
 	padding-left: 30px;
-
 }
 
 .run p {
@@ -432,7 +532,6 @@ pink
 	text-decoration: none;
 	color: red;
 	padding-left: 30px;
-
 }
 
 .run-1 {
@@ -440,18 +539,18 @@ pink
 	height: 261px;
 }
 	
-
 .container_courses-2-3 {
 	width: 420px;
 	height: 530px;
 }
 
+.running:hover {
+	margin-top: -30px;
+}
 
 .running h3 {
-	font-size: 25px;
 	padding-top: 40px;
 	padding-left: 30px;
-
 }
 
 .running p {
@@ -464,7 +563,6 @@ pink
 	text-decoration: none;
 	color: red;
 	padding-left: 30px;
-
 }
 
 .running-1 {
@@ -472,6 +570,769 @@ pink
 	height: 261px;
 }
 
+.Contact-1 {
+	background: url(../img/gym_pageheader.jpg) no-repeat center top / cover;
+	margin-top: 100px;
+	height: 777px;
+}
+
+.contact-1-1 {
+	text-align: center;
+	padding-top: 85px;
+}
+
+.contact-1-2 h3 {
+	font-family: Montserrat,sans-serif;
+	font-size: 60px;
+	color: #fff;
+	padding-left: 18px;
+	text-align: center;
+	padding-top: 10px;
+}
+
+.contact-1-3 {
+	display: flex;
+}
+
+
+.call_us {
+	width: 380px;
+	height: 260px;
+	margin-left: 240px;
+	margin-top: 90px;	
+}
+
+.contact-2-1 {
+	background: #1d2634;
+	width: 376.66px;
+	height: 250px;
+}
+
+.contact-2-1 img {
+	padding-left: 146px;
+	padding-top: 40px;
+}
+
+.contact-2-1 h5 {
+	font-family: Montserrat;
+	color: #f48460;
+	font-size: 15px;
+	text-align: center;
+	padding-top: 20px;
+}
+
+.contact-2-1 h3 {
+	font-family: Montserrat;
+	color: #fff;
+	font-size: 24px;
+	text-align: center;
+	padding-top: 25px;
+}
+
+.Applicationform {
+	background: #fff;
+	width: 480px;
+	height: 430px;
+	margin-left: 100px;
+	margin-top: 40px;
+	padding-top: 40px;
+}
+
+.contact-2-2 h2 {
+	font-family: Open Sans,sans-serif;
+	color: black;
+	font-size: 36px;
+	text-align: center;
+	text-transform: uppercase
+}
+
+.contact-2-2 p {
+	font-family: Open Sans,sans-serif;
+	font-size: 14px;
+	text-align: center;
+	padding-top: 20px;
+	margin-bottom: 15px;
+}
+
+.input {
+	font-size: 15px;
+	width: 300px;
+	margin-left: 80px;
+	margin-top: 25px;
+	padding: 5px 0px 5px 5px;
+}
+
+.btn-3 {
+	font-family: Open Sans,sans-serif;
+	background: #f34e3a;
+	color: #fff;
+	display: block;
+	width: 180px;
+	padding: 14px 25px 16px;
+	text-decoration: none;
+	font-weight: bold;
+	margin-left: 40px;
+	margin-top: 20px;
+	padding: 15px 0px 15px 5px;
+	margin-left: 135px;
+	text-transform: uppercase;
+}
+
+.mail {
+	width: 380px;
+	height: 260px;
+	margin-left: 100px;
+	margin-top: 90px;	
+}
 
 
 
+
+/*Responsive*/
+
+/* 768px - 992px */
+@media screen and (max-width: 900px) {
+
+	.header {
+		width: 900px;
+	}
+
+	.text-1firsr {
+		width: 900px;
+	}
+
+	.about_the_technique {
+		width: 100%;
+		position: inherit;
+		text-align: center;
+		margin-top: 570px;
+	}
+
+	.arrow1-1 {
+		position: absolute;
+		left: 430px;
+	}
+
+	.top_button {
+		width: 900px;
+	}
+	
+	.container-6 {
+		width: 900px;
+		height: 530px;
+		display: initial;
+	}
+
+	.iframe2 {
+		width: 768px;
+		border: 4px solid blue;
+		height: 528px;
+		margin-left: 60px;
+	}
+
+	.Methodology-1-2 {
+		width: 820px;
+		margin-top: 20px;
+	}
+
+	.title_Methodology h2 {
+		padding-top: 20px;
+	}
+
+	.directions_1 {
+		margin-top: -20px;
+	}
+	
+	.directions-1 {
+		width: 900px;
+	}
+
+	.title_directions-1 {
+		width: 900px;
+	}
+
+	.directions-1-1 {
+		width: 900px;
+		display: initial;
+	}
+
+	.container-1-1 {
+		width: 450px;
+	}
+
+	.img-ironman1 {
+		width: 450px;
+	}
+	
+	.container-2 {
+		margin-top: -3.6px;
+	}
+
+	.container-2-1 {
+		width: 450px;
+	}
+
+	.img-Triathlon1 {
+		width: 450px;
+	}
+
+	.directions-2-1 {
+		width: 900px;
+		float: left;
+		display: initial;
+	}
+	.directions-2-2 {
+		width: 900px;
+		display: flex;
+	}
+
+	.img-Marathon {
+		width: 450px;
+	}
+
+	.container-3-1 {
+		width: 450px;
+	}
+
+	.directions-2-3 {
+		width: 900px;
+		display: flex;
+	}
+
+	.img-kettlebells {
+		width: 450px;
+	}
+
+	.container-4-1 {
+		width: 450px;
+	}
+
+	.Courses-1 {
+		width: 900px;
+		height: 1200px;
+		margin-top: 1000px;
+		margin-left: 1px;	
+	}
+
+	.container_courses-2 {
+		margin-left: 14px;
+	}
+	
+	.title_courses-1  {
+		width: 900px;
+	}
+
+	.container_courses-2 {
+		width: 900px;
+		margin-top: 20px;
+		flex-wrap: wrap;
+    }
+	
+	.Contact-1 {
+		width: 900px;
+		margin-top: -20px;
+	}
+
+	.contact-1-3 {
+		width: 900px;
+	}
+	
+	.call_us {
+		margin-left: 10px;
+	}
+
+	.contact-2-1 {
+		width: 236.66px;
+		height: 221px;
+	}
+
+	.call {
+		margin-top: -20px;
+		margin-left: -75px;
+	}
+	
+	.Applicationform {
+		margin-left: 0px;
+	}
+	
+	.btn-3 {
+		margin-left: 100px;
+	}
+
+	.mail {
+		margin-left: 10px;
+	}
+
+	}
+
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+
+	.header {
+		width: 768px;
+	}
+
+	.logo {
+		margin-left: 300px;
+	}
+
+	.container-7 nav {
+		width: 100%;
+		padding-left: 50px;
+	}
+
+	.text-1firsr {
+		width: 768px;
+	}
+
+	.about_the_technique {
+		width: 100%;
+		position: inherit;
+		text-align: center;
+		margin-top: 500px;
+	}
+	
+	.arrow1-1 {
+		position: absolute;
+		left: 360px;
+	}
+	
+	.top_button {
+		width: 768px;
+	}
+
+	.iframe2 {
+		width: 768px;
+		margin-top: 30px;
+		margin-left: 0px;
+	}
+
+	.Methodology-1-2 {
+		width: 768px;
+		margin-top: 20px;
+	}
+
+	.title_Methodology h2 {
+		padding-top: 20px;
+	}
+
+	.directions_1 {
+		width: 768px;
+		margin-top: -20px;
+	}
+	
+	.directions-1 {
+		width: 768px;
+	}
+
+	.title_directions-1 {
+		width: 768px;
+	}
+
+	.directions-1-1 {
+		width: 768px;
+		display: initial;
+	}
+
+	.container-1-1 {
+		width: 384px;
+	}
+
+	.img-ironman1 {
+		width: 384px;
+	}
+	
+	.container-2 {
+		margin-top: -3.6px;
+	}
+
+	.container-2-1 {
+		width: 384px;
+	}
+
+	.img-Triathlon1 {
+		width: 384px;
+	}
+
+	.directions-2-1 {
+		width: 768px;
+		float: left;
+		display: initial;
+	}
+	.directions-2-2 {
+		width: 768px;
+		display: flex;
+	}
+
+	.img-Marathon {
+		width: 384px;
+	}
+
+	.container-3-1 {
+		width: 384px;
+	}
+
+	.directions-2-3 {
+		width: 768px;
+		display: flex;
+	}
+
+	.img-kettlebells {
+		width: 384px;
+	}
+
+	.container-4-1 {
+		width: 384px;
+	}
+
+	.Courses-1 {
+		width: 768px;
+		height: 1700px;
+		margin-top: 1000px;
+		margin-left: 1px;
+	}
+
+	.title_courses-1  {
+		width: 768px;
+	}
+
+	.container_courses-2 {
+		width: 768px;
+		margin-left: -1px;
+	}
+
+	.Bench-1-1 {
+		width: 600px;
+		height: 378px;
+	}
+
+	.Bench-1 {
+		margin-left: 80px;
+	}
+	
+	.Bench-1 p {
+		width: 600px;
+	}
+
+	.container_courses-2 {
+		width: 600px;
+		margin-top: 20px;
+		flex-wrap: wrap;
+    }
+	
+	.run {
+		width: 600px;
+		margin-top: 100px;
+		margin-left: 50px;
+	}
+
+	.run-1 {
+		width: 600px;
+		height: 378px;
+	}
+		
+	.run p {
+		width: 590px;
+	}
+
+	.running {
+		width: 600px;
+		margin-top: 180px;
+		margin-left: 80px;
+	}
+
+	.running-1 {
+		width: 600px;
+		height: 378px;
+	}
+
+	.Contact-1 {
+		width: 768px;
+		height: 1000px;
+		margin-top: 300px;
+	}
+
+	.contact-1-3 {
+		width: 768px;
+	}
+	
+	.call_us {
+		margin-top: 500px;
+		margin-left: 10px;
+	}
+
+	.contact-2-1 {
+		width: 236.66px;
+		height: 221px;
+	}
+
+	.call_us {
+		margin-left: 100px;
+	}
+	
+	.Applicationform {
+		margin-left: -270px;
+	}
+	
+	.btn-3 {
+		margin-left: 100px;
+	}
+
+	.mail {
+		margin-top: 500px;
+		margin-left: -185px;
+	}
+
+	}
+
+
+/* 0px - 576px */
+@media screen and (max-width: 576px) {
+
+	.header {
+		width: 576px;
+		border: 4px solid red;
+	}
+
+	.logo {
+		margin-left: 10px;
+	}
+
+	.container-7 nav {
+		width: 40%;
+		margin-top: 10px;
+	}
+
+	.text-1firsr {
+		width: 576px;
+	}
+
+	.about_the_technique {
+		width: 100%;
+		position: inherit;
+		text-align: center;
+		margin-top: 500px;
+	}
+	
+	.arrow1-1 {
+		position: absolute;
+		margin-bottom: 30px;
+		left: 270px;
+	}
+	
+	.top_button {
+		width: 576px;
+	}
+
+	.iframe2 {
+		width: 576px;
+		margin-top: 30px;
+		margin-left: 0px;
+	}
+
+	.Methodology-1-1 {
+		width: 576px;
+	}
+
+	.Methodology-1-2 {
+		width: 576px;
+		margin-top: 20px;
+	}
+
+	
+	.directions_1 {
+		width: 576px;
+		margin-top: -20px;
+	}
+	
+	.title_directions-1 {
+		width: 576px;
+	}
+	
+	.directions-1-1 {
+		width: 576px;
+		display: initial;
+	}
+
+	.container-1 {
+		width: 576px;
+ 		display: flex;
+ 		flex-wrap: wrap;
+  	}
+
+	.container-1-1 {
+		width: 576px;
+		height: 280px;
+	}
+
+	.container-1-1 h3 {
+		width: 576px;
+		padding-top: 45px;
+	}
+
+	.img-ironman1 {
+		width: 576px;
+	}
+	
+	.container-2 {
+		width: 576px;
+ 		display: flex;
+ 		flex-wrap: wrap;
+	}
+
+	.container-2-1 {
+		width: 576px;
+		height: 280px;
+		padding-top: 35px;
+	}
+
+	.container-2-1 h3 {
+		padding-top: 10px;
+	}
+	
+	.img-Triathlon1 {
+		width: 576px;
+	}
+
+	.directions-2-1 {
+		width: 576px;
+		margin-top: 298px;
+		display: initial;
+	}
+
+	.directions-2-2 {
+		width: 576px;
+ 		display: flex;
+ 		flex-wrap:wrap-reverse;
+	}
+
+	.img-Marathon {
+		width: 576px;
+		margin-top: -126px;
+	}
+
+	.container-3-1 {
+		width: 576px;
+		height: 230px;	
+		margin-top: -15px;
+	}
+	
+	.container-3-1 h3 {
+		width: 576px;	
+		padding-top: 35px;
+	}
+
+	.directions-2-3 {
+		width: 576px;
+		display: flex;
+ 		flex-wrap: wrap-reverse;
+ 	}
+
+	.img-kettlebells2 {
+		width: 576px;
+		margin-top: -332px;
+	}
+
+	.container-4-1 {
+		width: 576px;
+		height: 260px;
+		margin-top: -126px;
+	}
+	
+	.container-4-1 h3 {
+		width: 576px;
+		padding-top: 45px;
+	}
+
+	.Courses-1 {
+		width: 576px;
+		height: 1700px;
+		margin-top: 1750px;
+	}
+
+	.title_courses-1  {
+		width: 576px;
+	}
+
+	.container_courses-2 {
+		width: 576px;
+		margin-top: 20px;
+		flex-wrap: wrap;
+	 }
+		
+	.Bench-1-1 {
+		width: 420px;
+		height: 265px;
+	}
+
+	.Bench-1 {
+		width: 420px;
+		margin-left: 78px;
+	}
+
+	.Bench-1 p {
+		width: 420px;
+	}
+
+	.run {
+		width: 420px;
+		margin-top: -10px;
+		margin-left: 50px;
+	}
+	
+	.run-1 {
+		width: 420px;
+		height: 265px;
+	}
+		
+	.run p {
+		width: 420px;
+	}
+
+	.running {
+		width: 420px;
+		margin-top: -10px;
+		margin-left: 80px;
+	}
+
+	.running-1 {
+		width: 420px;
+		height: 265px;
+	}
+
+	.Contact-1 {
+		width: 576px;
+		height: 1000px;
+		margin-top: 10px;
+	}
+	
+	.contact-1-3 {
+		width: 576px;
+	}
+
+	.call_us {
+		margin-top: 500px;
+		margin-left: 30px;
+	}
+
+	.contact-2-1 {
+		width: 236.66px;
+		height: 221px;
+}
+
+	.Applicationform {
+		margin-left: -200px;
+	}
+	
+	.btn-3 {
+		margin-left: 100px;
+	}
+
+	.mail {
+		margin-top: 500px;
+		margin-left: -180px;
+	}
+
+	}
+
+	
